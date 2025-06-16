@@ -1,17 +1,19 @@
-*,*::before,*::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
 :root {
-  -ff-primary: 'Source Sans Pro', sans-serif;
-  -ff-secondary: 'Source Code Pro', monospace;
+  --ff-primary: 'Source Sans Pro', sans-serif;
+  --ff-secondary: 'Source Code Pro', monospace;
 
-  -fw-reg: 300;
-  -fw-bold: 900;
+  --fw-reg: 300;
+  --fw-bold: 900;
 
   --clr-light: #fff;
   --clr-dark: #303030;
-  --clr--accent: #16e0bd;
+  --clr-accent: #16e0bd;
 
   --fs-h1: 3rem;
   --fs-h2: 2.25rem;
@@ -31,7 +33,7 @@
 /* General Styles */
 
 body {
-  background :var(--clr-light);
+  background: var(--clr-light);
   color: var(--clr-dark);
   margin: 0;
   font-family: var(-ff-primary);
@@ -44,6 +46,10 @@ img {
   max-width: 100%;
 }
 
+strong { font-weight: var(--fw-bold) }
+
+/* Typography */
+
 h1,
 h2,
 h3 {
@@ -54,3 +60,28 @@ h3 {
 h1 { font-size: var(--fs-h1) }
 h2  { font-size: var(--fs-h2) }
 h3 { font-size: var(--fs-h3) }
+
+.section__title {
+  margin-bottom: .25em;
+}
+
+.section__title--intro {
+  font-weight: var(--fw-reg)
+}
+/* allows for name to always be on a separate line; not usually used (compound selectors) */
+.section__title--intro strong {
+  display: block; 
+}
+
+.section__subtitle {
+  margin: 0;
+  font-size: var(--fs-h3);
+}
+
+.section__subtitle, 
+.section__subtitle--intro {
+  background: var(--clr-accent);
+  font-family: var(--ff-secondary);
+}
+
+/* Intro Section */
