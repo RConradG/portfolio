@@ -15,12 +15,11 @@
     crossorigin="anonymous" 
   /> 
 
-  <link 
-    href="https://fonts.googleapis.com/css?family=Source+Code+Pro:00,900|Source+Sans+Pro:300,900&display=swap" 
-    rel="stylesheet"
-  >
-
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;700&family=Nova+Flat&display=swap" rel="stylesheet">
+  
   <link rel="stylesheet" href="/css/style.css">
+
+  <script src="https://kit.fontawesome.com/98118e2acb.js" crossorigin="anonymous"></script>
 </head>
 
   <body>
@@ -35,10 +34,10 @@
     
         <nav class="nav">
           <ul class="nav__list">
-            <li class="nav__item"><a href="" class="nav__link" id="">Home</a></li>
-            <li class="nav__item"><a href="" class="nav__link" id="">My Services</a></li>
-            <li class="nav__item"><a href="" class="nav__link" id="">About Me</a></li>
-            <li class="nav__item"><a href="" class="nav__link" id="">My Work</a></li>
+            <li class="nav__item"><a href="#home" class="nav__link" id="">Home</a></li>
+            <li class="nav__item"><a href="#services" class="nav__link" id="">My Services</a></li>
+            <li class="nav__item"><a href="#about" class="nav__link" id="">About Me</a></li>
+            <li class="nav__item"><a href="#work" class="nav__link" id="">My Work</a></li>
           </ul>
         </nav>
     </header>
@@ -130,16 +129,29 @@
   
   
     <!-- footer -->
-    <footer>
+    <footer class="footer">
       <a href="mailto:rcgadduang@gmail.com" class="footer__link">rcgadduang@gmail.com</a>
       <ul class="social-list">
-        <li class="social-list__item"><a href="https://codepen.io" class="social-list__link">a</a></li>
-        <li class="social-list__item"><a href="http://dribbble.com" class="social-list__link">b</a></li>
-        <li class="social-list__item"><a href="https://twitter.com" class="social-list__link">c</a></li>
+        <li class="social-list__item">
+          <a href="https://github.com" class="social-list__link">
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </li>
+
+        <li class="social-list__item">
+          <a href="http://dribbble.com" class="social-list__link">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+        </li>
+ 
         <li class="social-list__item"><a href="https://github.com" class="social-list__link">d</a></li>
       </ul>
     </footer>
-  </body>
+
+    <!-- allows js implementation -->
+     <script src="js/index.js"></script>
+
+    </body>
 
 
 </html>
